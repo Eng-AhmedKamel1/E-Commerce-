@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+    <!-- file css -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/login_regs.css">
+    <!-- file fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- header sart-->
+<header>
+    <div class="container  top-nav">
+        <a href="index.html" class="logo" ><img src="img/logo-black.png" alt=""> </a>
+        
+        <form action="" class="search">
+            <input type="search" placeholder="Search For Prodacts....">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-header">
+            <div onclick="openCart()" class="icon-cart"><i class="fa-solid fa-bag-shopping"></i>
+            <span class="count-items">0</span>
+            </div>
+            <div class="tottal-price">
+            <p>My Cart:</p>
+            <p class="price-cart-head">$0</p>           
+        </div>
+    </div>    
+</div>
+
+    <nav class="nav">
+        <div class="links container">
+            <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+                <span onclick="closeMenu()" class="bg_overlay"></span>
+                <i onclick="closeMenu()" class="fa-solid fa-xmark  btn_close_menu" ></i>
+                <img src="img/logo-black.png" class="logo_menu" alt="">
+                
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="all_prodacts.html">Products</a></li>
+                <li><a href="contact_us.html">Contact </a></li>  
+                <li><a href="">About Us</a></li>
+            </ul>
+           
+            <div class="loging-signup">
+                <a href="signup.html" class="signup">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+        </nav>
+</header>
+<!-- header end -->
+<!-- cart start -->
+   <div class="cart ">
+    <div class="top-cart">
+        <h3>My Cart <span class="count-items-cart">(0Item in Cart)</span></h3>
+        <span onclick="closeCart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="items-in-cart">
+        
+        <!-- Repeat item-cart for more products -->
+        
+    </div>
+    <div class="bottom-cart">
+        <div class="total">
+            <p>Cart SubTotal:</p>
+            <p class="price-cart-total">$0</p>
+
+        </div>
+
+        <div class="bottn-cart">
+           <a href="checkout.html" class="btn-cart">Proceed To Chickout </a>
+           <button onclick="closeCart()"   class="btn-cart  trans-bg" >Shop more</button>
+    </div>
+</div>
+</div>
+<!-- cart end -->
+    
+
+<section class="signin sec_form">
+    <div class="form_container">
+        <p class="titel">Welcome Back</p>
+        <form action="" class="form">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="password">
+            <p class="page_link">
+            
+                <a href="" class="page_link_label">Forget Password ?</a>
+
+            </p>
+            <button class="form_btn" type="submit">Login</button>
+        </form>
+        <p class="sign_up_label">
+            Don't Have An Account? <a class="sign_up_link" href="">Sign Up</a>
+        </p>
+        <div class="buttons_container">
+            <div class="apple_login_butons">
+                <i class="fa-brands fa-apple"></i>
+                <span>Login With Apple</span>
+            </div>
+            <div class="google_login_butons">
+                <i class="fa-brands fa-google"></i>
+                <span>Login With Google</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+ 
+
+<footer >
+    <div class="container">
+       <div class="big_row">
+        <img src="img/logo-white.png" alt="">
+       <div class="hotline">
+        <i class="fa-solid fa-headset"></i>
+            <div class="text">
+                <h5>Hotline Free</h5>
+                <h6>01010704336</h6>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, rerum.</p>
+
+        </div>
+
+        <div class="row">
+            <h4>FAQS $ Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.`S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping $ Delivery</h4>
+            <div class="links">
+                <a href="">Delivery Information</a>
+                <a href="">Discount</a>
+                <a href="">Payment $ Shipping</a>
+                <a href="">Estimate Delevary Time</a>
+                <a href="">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="">Popular</a>
+                <a href="">Our Services</a>
+                <a href="">Your Account</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms $ Conditions</a>
+            </div>
+        </div>
+
+        </div>
+  <div class="bottom_footer">
+    <div class="container">
+        <p>Copyrigh &copy; <span>Topico.</span>all rights reserved</p>
+        <div class="payment_img">
+            <img src="img/payment-1.png" alt="">
+            <img src="img/payment-2.png" alt="">
+            <img src="img/payment-3.png" alt="">
+            <img src="img/payment-4.png" alt="">
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/all_prodacts.js"></script>
+</body>
+</html>

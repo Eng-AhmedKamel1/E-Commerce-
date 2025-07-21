@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+    <!-- file css -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- file fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- header sart-->
+<header>
+    <div class="container  top-nav">
+        <a href="#" class="logo" ><img src="img/logo-black.png" alt=""> </a>
+        
+        <form action="" class="search">
+            <input type="search" placeholder="Search For Prodacts....">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-header">
+            <div onclick="openCart()" class="icon-cart"><i class="fa-solid fa-bag-shopping"></i>
+            <span class="count-items">0</span>
+            </div>
+            <div class="tottal-price">
+            <p>My Cart:</p>
+            <p class="price-cart-head">$0</p>           
+        </div>
+    </div>    
+</div>
+
+    <nav class="nav">
+        <div class="links container">
+            <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+                <span onclick="closeMenu()" class="bg_overlay"></span>
+                <i onclick="closeMenu()" class="fa-solid fa-xmark  btn_close_menu" ></i>
+                <img src="img/logo-black.png" class="logo_menu" alt="">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="all_prodacts.html">Products</a></li>
+                <li><a href="contact_us.html">Contact </a></li>  
+                <li><a href="">About Us</a></li>
+            </ul>
+            <div class="loging-signup">
+                <a href="#" class="login">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="#" class="signup">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+        </nav>
+</header>
+<!-- header end -->
+<!-- cart start -->
+    <div class="cart ">
+    <div class="top-cart">
+        <h3>My Cart <span class="count-items-cart">(0Item in Cart)</span></h3>
+        <span onclick="closeCart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="items-in-cart">
+        
+        <!-- Repeat item-cart for more products -->
+        
+    </div>
+    <div class="bottom-cart">
+        <div class="total">
+            <p>Cart SubTotal:</p>
+            <p class="price-cart-total">$0</p>
+
+        </div>
+
+        <div class="bottn-cart">
+           <a href="checkout.html" class="btn-cart">Proceed To Chickout </a>
+           <button onclick="closeCart()"   class="btn-cart  trans-bg" >Shop more</button>
+    </div>
+</div>
+</div>
+<!-- cart end -->
+
+<div class="item_details">
+    <div class="container">
+        <div class="img_item">
+            <div class="big_img">
+                <img id="bigImg" src="img/product/product-1.jpg" alt="">
+            </div>
+            <div class="small_imgs">
+                <img onclick="changeItemImg(this.src)" src="img/product/product-1.jpg" alt="">
+                <img onclick="changeItemImg(this.src)" src="img/product/product1.jpg" alt="">
+                <img onclick="changeItemImg(this.src)" src="img/product/product-2.jpg" alt="">
+                <img onclick="changeItemImg(this.src)" src="img/product/product2.jpg" alt="">
+
+            </div>
+        </div>
+
+        <div class="details_items">
+            <h1>Original Mobile android Dual SIm Smart phone G3</h1>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+            <div class="price">
+                <p><span>$1200</span></p>
+                <p class="old-price"><span>$2200</span></p>
+            </div>
+            <h5>Avaailability: <span>In Stock</span></h5>
+            <h5>SKU: <span>Samsung c49j16 $875 debenhams plus </span></h5>
+            <p class="text_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea 
+                illo deleniti similique consequuntur quisquam odit impedit 
+                accusamus voluptatem, dolorum nihil iste voluptates magni id sed corrupti
+                 quia maiores labore fuga sint! Ipsam debitis id, placeat veritatis totam adipisci voluptatem 
+                 iure possimus voluptates cu
+                mque suscipit ullam quasi saepe? Ipsum, similique suscipit!</p>
+                <h4>Hurry Up! only 98 prodact on stock</h4>
+                <button>add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="icons">
+                    <span><i class="fa-regular fa-heart"></i></span>
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <span><i class="fa-solid fa-print"></i></span>
+                    <span><i class="fa-solid fa-share-nodes"></i></span>
+                </div>
+        </div>
+    </div>
+</div>
+
+<section class="slide slide-sale">
+    <div class="container">
+        <div class="top-slide">
+                <h2>on sale <span>Prodact</span></h2>
+            </div>
+        <div class="sale-sec myswiper">
+            
+            <div id="swiper-items-sale" class="prodacts swiper-wrapper">
+                
+        </div>
+        
+             <div class="swiper-button-next btn-swip"></div>
+             <div class="swiper-button-prev btn-swip"></div>
+             </div>
+
+        </div>
+
+
+</section>
+
+
+<div class="back_to_top">
+    <p>Back TO Top</p>
+</div>
+<footer >
+    <div class="container">
+       <div class="big_row">
+        <img src="img/logo-white.png" alt="">
+       <div class="hotline">
+        <i class="fa-solid fa-headset"></i>
+            <div class="text">
+                <h5>Hotline Free</h5>
+                <h6>01010704336</h6>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, rerum.</p>
+
+        </div>
+
+        <div class="row">
+            <h4>FAQS $ Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.`S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping $ Delivery</h4>
+            <div class="links">
+                <a href="">Delivery Information</a>
+                <a href="">Discount</a>
+                <a href="">Payment $ Shipping</a>
+                <a href="">Estimate Delevary Time</a>
+                <a href="">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="">Popular</a>
+                <a href="">Our Services</a>
+                <a href="">Your Account</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms $ Conditions</a>
+            </div>
+        </div>
+
+        </div>
+  <div class="bottom_footer">
+    <div class="container">
+        <p>Copyrigh &copy; <span>Topico.</span>all rights reserved</p>
+        <div class="payment_img">
+            <img src="img/payment-1.png" alt="">
+            <img src="img/payment-2.png" alt="">
+            <img src="img/payment-3.png" alt="">
+            <img src="img/payment-4.png" alt="">
+        </div>
+    </div>
+  </div>
+</footer>
+
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/items_home.js"></script>
+ <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+    <!-- file css -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- file fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <!-- header sart-->
+<header>
+    <div class="container  top-nav">
+        <a href="index.html" class="logo" ><img src="img/logo-black.png" alt=""> </a>
+        
+        <form action="" class="search">
+            <input type="search" placeholder="Search For Prodacts....">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-header">
+            <div onclick="openCart()" class="icon-cart"><i class="fa-solid fa-bag-shopping"></i>
+            <span class="count-items">0</span>
+            </div>
+            <div class="tottal-price">
+            <p>My Cart:</p>
+            <p class="price-cart-head">$0</p>           
+        </div>
+    </div>    
+</div>
+
+    <nav class="nav">
+        <div class="links container">
+            <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+                <span onclick="closeMenu()" class="bg_overlay"></span>
+                <i onclick="closeMenu()" class="fa-solid fa-xmark  btn_close_menu" ></i>
+                <img src="img/logo-black.png" class="logo_menu" alt="">
+                
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="all_prodacts.html">Products</a></li>
+                <li><a href="contact_us.html">Contact </a></li>  
+                <li><a href="">About Us</a></li>
+            </ul>
+           
+            <div class="loging-signup">
+                <a href="login.html" class="login">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="signup.html" class="signup">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+        </nav>
+</header>
+<!-- header end -->
+<!-- cart start -->
+    <div class="cart ">
+    <div class="top-cart">
+        <h3>My Cart <span class="count-items-cart">(0Item in Cart)</span></h3>
+        <span onclick="closeCart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="items-in-cart">
+        
+        <!-- Repeat item-cart for more products -->
+        
+    </div>
+    <div class="bottom-cart">
+        <div class="total">
+            <p>Cart SubTotal:</p>
+            <p class="price-cart-total">$0</p>
+
+        </div>
+
+        <div class="bottn-cart">
+           <a href="checkout.html" class="btn-cart">Proceed To Chickout </a>
+           <button onclick="closeCart()"   class="btn-cart  trans-bg" >Shop more</button>
+    </div>
+</div>
+</div>
+<!-- cart end -->
+
+<!-- side bar start -->
+ <section class="slider">
+    <div class="container">
+        <div class="side-bar">
+            <h3><i class="fa-solid fa-bars"></i>Shop By Debartmen</h3>
+            <a href="">All Categories</a>
+            <a href="">Best Saller Products</a>
+            <a href="">New Arrivals</a>
+            <a href="">Top 10 Offers</a>
+            <a href="">Phone & Tablet</a>
+            <a href="">Electronics & Digital</a>
+            <a href="">Fation & Clothinges</a>
+            <a href="">Jewelry & Watches</a>
+            <a href="">Tv & Audios</a>
+        </div>
+      <div class="slide-swp myswiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/slider-01.jpg" alt="Slide 1"></div>
+      <div class="swiper-slide"><img src="img/slider-02.jpg" alt="Slide 2"></div>
+      <div class="swiper-slide"><img src="img/slider-03.jpg" alt="Slide 3"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+ </section>
+<!-- side bar end -->
+ <!-- //start frature -->
+<section class="features">
+    <div class="container">
+    <div class="feature-item">
+        <img src="img/features1.png" alt="">
+        <div class="text">
+            <h4>Free Shopping</h4>
+            <p>free shopping on all orders</p>
+        </div>
+        </div>
+    <div class="feature-item">
+        <img src="img/features2.png" alt="">
+        <div class="text">
+            <h4>Free Shopping</h4>
+            <p>free shopping on all orders</p>
+        </div>
+        </div>
+    <div class="feature-item">
+        <img src="img/features3.png" alt="">
+        <div class="text">
+            <h4>Free Shopping</h4>
+            <p>free shopping on all orders</p>
+        </div>
+        </div>
+    <div class="feature-item">
+        <img src="img/features4.png" alt="">
+        <div class="text">
+            <h4>Free Shopping</h4>
+            <p>free shopping on all orders</p>
+        </div>
+        </div>
+    <div class="feature-item">
+        <img src="img/features5.png" alt="">
+        <div class="text">
+            <h4>Free Shopping</h4>
+            <p>free shopping on all orders</p>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- end feature -->
+<!-- start banner-->
+<section class="banner">
+    <div class="container">
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+
+                <img src="img/banner/banner-2.jpg" alt="">
+            
+        </div>
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+                <img src="img/banner/banner-3.jpg" alt="">
+            
+        </div>
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+                <img src="img/banner/banner-1.jpg" alt="">
+            
+        </div>
+        
+    </div>
+</section>
+<!-- end banner-->
+
+<section class="slide slide-sale">
+    <div class="container">
+        <div class="top-slide">
+                <h2>on sale <span>Prodact</span></h2>
+            </div>
+        <div class="sale-sec myswiper">
+            
+            <div id="swiper-items-sale" class="prodacts swiper-wrapper">
+                
+        </div>
+        
+             <div class="swiper-button-next btn-swip"></div>
+             <div class="swiper-button-prev btn-swip"></div>
+             </div>
+
+        </div>
+
+
+</section>
+
+
+<section class="banner banner_big">
+    <div class="container">
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+
+                <img src="img/banner/banner-4.jpg" alt="">
+            
+        </div>
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+                <img src="img/banner/banner-5.jpg" alt="">
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+
+
+<section class="slide slide_prodact">
+    <div class="container">
+        <div class="top-slide">
+                <h2>Computer $ Desktop <span>prodacts</span></h2>
+            </div>
+        <div class="slide_with_img">
+
+            <div class="categ_img">
+                <a href=""><img src="img/banner/banner-sm-1.jpg" alt=""></a>
+            </div>
+            <div class="prodact_swip myswiper">
+                <div id="other_prodact_swiper" class="prodacts other_prodact_swiper swiper-wrapper">
+
+                </div>
+                
+             <div class="swiper-button-next btn-swip"></div>
+             <div class="swiper-button-prev btn-swip"></div>
+
+            </div>
+        </div>
+         
+        </div>
+
+
+</section>
+
+
+
+
+<section class="slide slide_prodact">
+    <div class="container">
+        <div class="top-slide">
+                <h2>Computer $ Desktop <span>prodacts</span></h2>
+            </div>
+        <div class="slide_with_img">
+
+            
+            <div class="prodact_swip myswiper">
+                <div id="other_prodact_swiper2" class="prodacts other_prodact_swiper swiper-wrapper">
+
+                </div>
+                
+             <div class="swiper-button-next btn-swip"></div>
+             <div class="swiper-button-prev btn-swip"></div>
+
+            </div>
+
+            <div class="categ_img">
+                <a href=""><img src="img/banner/banner-sm-2.jpg" alt=""></a>
+            </div>
+        </div>
+         
+        </div>
+
+
+</section>
+
+<section class="banner">
+    <div class="container">
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+
+                <img src="img/banner/banner-6.jpg" alt="">
+            
+        </div>
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+                <img src="img/banner/banner-7.jpg" alt="">
+            
+        </div>
+        <div class="banner-img">
+            <div class="glass-hover"></div>
+            <a href=""></a>
+                <img src="img/banner/banner-8.jpg" alt="">
+            
+        </div>
+        
+    </div>
+</section>
+
+<div class="newsletter">
+    <div class="container">
+        <div class="text">
+            <img src="img/icon_email.png" alt="">
+           <div class="content">
+             <h4>Sign Up To Our Newsletter</h4>
+            <p>Get email updates about our latest shop and special offers</p>
+            <span>$30 Coupon For First shopping</span>
+           </div>
+        </div>
+
+        <form action="" class="news_letter_form">
+            <input type="email" placeholder="Enter Your Email Adress....">
+            <button type="submit">Subscribe</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="back_to_top">
+    <p>Back TO Top</p>
+</div>
+<footer >
+    <div class="container">
+       <div class="big_row">
+        <img src="img/logo-white.png" alt="">
+       <div class="hotline">
+        <i class="fa-solid fa-headset"></i>
+            <div class="text">
+                <h5>Hotline Free</h5>
+                <h6>01010704336</h6>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, rerum.</p>
+
+        </div>
+
+        <div class="row">
+            <h4>FAQS $ Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.`S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping $ Delivery</h4>
+            <div class="links">
+                <a href="">Delivery Information</a>
+                <a href="">Discount</a>
+                <a href="">Payment $ Shipping</a>
+                <a href="">Estimate Delevary Time</a>
+                <a href="">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="">Popular</a>
+                <a href="">Our Services</a>
+                <a href="">Your Account</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms $ Conditions</a>
+            </div>
+        </div>
+
+        </div>
+  <div class="bottom_footer">
+    <div class="container">
+        <p>Copyrigh &copy; <span>Topico.</span>all rights reserved</p>
+        <div class="payment_img">
+            <img src="img/payment-1.png" alt="">
+            <img src="img/payment-2.png" alt="">
+            <img src="img/payment-3.png" alt="">
+            <img src="img/payment-4.png" alt="">
+        </div>
+    </div>
+  </div>
+</footer>
+
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/items_home.js"></script>
+ <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

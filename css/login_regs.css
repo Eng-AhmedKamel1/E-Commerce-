@@ -1,0 +1,142 @@
+:root{
+    --main-color: #ff6b6b;
+    --dark-color: #222020;
+    --parg-color: #333;
+    --dark-red: #d01418;
+    --parg-color: #333;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+    --second-color: #c5c21d;
+    --third-color: #fbff00;
+}
+
+
+.sec_form{
+    margin: 100px 0 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form_container{
+    width: 350px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0 , 0.35)  0px 5px 15px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.titel{
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin:10px 0 30px;
+    
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    
+}
+.form input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    
+
+}
+.form input:focus{
+    border: 1px solid var(--name-item);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0 , 0.35) 0px 5px 15px;
+
+}
+.page_link{
+    margin: 0;
+    text-align: end;
+}
+
+.page_link .page_link_label{
+    font-size: 13px;
+    color: var(--parg-color);
+}
+.page_link .page_link_label:hover{
+    color: var(--name-item);
+    transition: 0.4s ease-in-out;
+    font-size: 14px;
+}
+ .form_btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--name-item);
+    color: #fff;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0 , 0.35) 0px 5px 15px;
+
+ }
+ .form_btn:hover{
+    background-color: var(--dark-red);
+    transition: 0.4s ease-in-out;
+    
+ }
+ .sign_up_label{
+    margin: 0;
+    font-size: 12px;
+    color: var(--parg-color);
+ }
+ .sign_up_label .sign_up_link{
+    color: var(--name-item);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+
+ }
+
+ .buttons_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+    
+ }
+ .buttons_container i{
+    font-size: 22px;
+ }
+ .apple_login_butons,
+ .google_login_butons{
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0 , 0.16) 0px 10px 36px 0,
+    rgba(0, 0, 0 , 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .apple_login_butons{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+ }
+.google_login_butons{
+    border: 2px solid #aca6a698;
+    color: var(--dark-color);
+}

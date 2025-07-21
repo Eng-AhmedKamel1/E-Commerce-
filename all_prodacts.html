@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topoco</title>
+    <!-- file css -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- file fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- header sart-->
+<header>
+    <div class="container  top-nav">
+        <a href="index.html" class="logo" ><img src="img/logo-black.png" alt=""> </a>
+        
+        <form action="" class="search">
+            <input type="search" placeholder="Search For Prodacts....">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="cart-header">
+            <div onclick="openCart()" class="icon-cart"><i class="fa-solid fa-bag-shopping"></i>
+            <span class="count-items">0</span>
+            </div>
+            <div class="tottal-price">
+            <p>My Cart:</p>
+            <p class="price-cart-head">$0</p>           
+        </div>
+    </div>    
+</div>
+
+    <nav class="nav">
+        <div class="links container">
+            <i onclick="openMenu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+                <span onclick="closeMenu()" class="bg_overlay"></span>
+                <i onclick="closeMenu()" class="fa-solid fa-xmark  btn_close_menu" ></i>
+                <img src="img/logo-black.png" class="logo_menu" alt="">
+                
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="all_prodacts.html">Products</a></li>
+                <li ><a href="contact_us.html">Contact </a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+           
+            <div class="loging-signup">
+                <a href="login.html" class="login">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                <a href="signup.html" class="signup">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+        </div>
+        </nav>
+</header>
+<!-- header end -->
+<!-- cart start -->
+   <div class="cart ">
+    <div class="top-cart">
+        <h3>My Cart <span class="count-items-cart">(0Item in Cart)</span></h3>
+        <span onclick="closeCart()" class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="items-in-cart">
+        
+        <!-- Repeat item-cart for more products -->
+        
+    </div>
+    <div class="bottom-cart">
+        <div class="total">
+            <p>Cart SubTotal:</p>
+            <p class="price-cart-total">$0</p>
+
+        </div>
+
+        <div class="bottn-cart">
+           <a href="checkout.html" class="btn-cart">Proceed To Chickout </a>
+           <button onclick="closeCart()"   class="btn-cart  trans-bg" >Shop more</button>
+    </div>
+</div>
+</div>
+<!-- cart end -->
+    <div class="top_page"> 
+        <div class="container">
+            <h1>Experience The Future of Tecnology with our Topico </h1>
+            <p>Technology has transformed the way we live, work, and communicate. 
+                From smartphones and the internet to artificial intelligence and robotics, it makes our lives easier
+                 and more connected. Every day, new innovations appear that 
+                help solve problems, improve efficiency, and open doors to exciting possibilities.</p>
+        </div>
+    </div>
+    
+    <section class="all_prodacts">
+        <div class="container">
+
+            <span class="btn_filter" onclick="open_close_Filter()">
+                Filter <i class="fa-solid fa-filter"></i>
+            </span>
+
+            <div  class="filter">
+                <h2>Filter</h2>
+
+                <div class="filter_items">
+
+                    <h4>Category</h4>
+
+                    <div class="item">
+                        <span>Phone</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>Tablets</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>Electronics</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    
+                    <div class="item">
+                        <span>Tv</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>Fashion</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>Watches</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                </div>
+
+
+                <div class="filter_items">
+
+                    <h4>Brand</h4>
+
+                    <div class="item">
+                        <span>APPLE</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>Samsung</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>OPPO</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    
+                    <div class="item">
+                        <span>NOKIA</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>intel</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span>xiaomi</span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                </div>
+
+
+                <div class="filter_items">
+
+                    <h4>Color</h4>
+
+                    <div class="item">
+                        <span class="color" style="background: red;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background: blue;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background: yellow;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background: olive;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    
+                    <div class="item">
+                        <span class="color" style="background: orangered;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background: seagreen;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="item">
+                        <span class="color" style="background: chartreuse;"></span>
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+            <div id="prodacts_dev" class="prodacts_dev">
+
+
+            </div>
+
+
+            
+
+        </div>
+        <div class="pagination">
+                <Span class="btn_page prev"><i class="fa-solid fa-backward-step"></i></Span>
+                <a href=""><Span class="num_page active">1</Span> </a>
+                 <a href=""> <Span class="num_page ">2</Span></a>
+                <a href=""><Span class="num_page ">3</Span> </a>
+                <Span class="btn_page next"><i class="fa-solid fa-forward-step"></i></Span>
+
+            </div>
+    </section>
+
+ 
+<div class="back_to_top">
+    <p>Back TO Top</p>
+</div>
+<footer >
+    <div class="container">
+       <div class="big_row">
+        <img src="img/logo-white.png" alt="">
+       <div class="hotline">
+        <i class="fa-solid fa-headset"></i>
+            <div class="text">
+                <h5>Hotline Free</h5>
+                <h6>01010704336</h6>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, rerum.</p>
+
+        </div>
+
+        <div class="row">
+            <h4>FAQS $ Help</h4>
+            <div class="links">
+                <a href="">F.A.Q.`S</a>
+                <a href="">Ordering Tracking</a>
+                <a href="">Contacts</a>
+                <a href="">Events</a>
+                <a href="">Help Center</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Shipping $ Delivery</h4>
+            <div class="links">
+                <a href="">Delivery Information</a>
+                <a href="">Discount</a>
+                <a href="">Payment $ Shipping</a>
+                <a href="">Estimate Delevary Time</a>
+                <a href="">Shipping Guide</a>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Information</h4>
+            <div class="links">
+                <a href="">Popular</a>
+                <a href="">Our Services</a>
+                <a href="">Your Account</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms $ Conditions</a>
+            </div>
+        </div>
+
+        </div>
+  <div class="bottom_footer">
+    <div class="container">
+        <p>Copyrigh &copy; <span>Topico.</span>all rights reserved</p>
+        <div class="payment_img">
+            <img src="img/payment-1.png" alt="">
+            <img src="img/payment-2.png" alt="">
+            <img src="img/payment-3.png" alt="">
+            <img src="img/payment-4.png" alt="">
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/all_prodacts.js"></script>
+</body>
+</html>
